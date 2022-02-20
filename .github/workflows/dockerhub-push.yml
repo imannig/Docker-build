@@ -21,7 +21,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: inok2341
+          username: imannig
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Set up Docker Buildx
@@ -35,7 +35,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: inok2341/anu:latest
+          tags: imannig/anu:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
