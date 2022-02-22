@@ -35,7 +35,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: imannig/anu:latest
+          tags: imannig/ngewe:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
